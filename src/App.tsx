@@ -12,9 +12,30 @@ import FormElements from './pages/Form/FormElements';
 import FormLayout from './pages/Form/FormLayout';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
-import Tables from './pages/Tables';
+import AdminTable from './pages/UserDetailsTable';
+import AdminTablePilot from './pages/PilotDetailsTable';
+import JobTable from './pages/JobDetailsTable';
+import JobTableClient from './pages/ClientDetailsTable';
+import JobTableTransport from './pages/TransportDetailsTable';
+import JobTableField from './pages/FieldDetailsTable';
+
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
+import OpsTable from './pages/DroneDetailsTable';
+import OpsTableSpray from './pages/SprayDetailsTable';
+import OpsTableFlight from './pages/FlightDetailsTable';
+import OpsTableSummary from './pages/SummaryDetailsTable';
+import AdminForm from './pages/AdminForm/UserRegistrationForm';
+import AdminFormPilot from './pages/AdminForm/PilotRegistrationForm';
+import JobForm from './pages/JobForm/JobDetailsForm';
+import JobFormClient from './pages/JobForm/ClientRegistrationForm';
+import JobFormTransport from './pages/JobForm/TransportRegistrationForm';
+import JobFormField from './pages/JobForm/FieldDetailsForm';
+import OpsForm from './pages/OpsForm/DroneInfoForm';
+import OpsFormFlight from './pages/OpsForm/FlightInfoForm';
+import OpsFormSpray from './pages/OpsForm/SprayingInfoForm';
+import OpsFormSummary from './pages/OpsForm/SummaryInfoForm';
+import DroneCrashForm from './pages/DroneCrashForm/DroneCrashDetailsForm';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -60,6 +81,120 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path="/AdminForm/UserRegistrationForm"
+          element={
+            <>
+              <PageTitle title="UserRegistrationForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <AdminForm />
+            </>
+          }
+        />
+
+        
+      <Route
+          path="/AdminForm/PilotRegistrationForm"
+          element={
+            <>
+              <PageTitle title="PilotRegistrationForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <AdminFormPilot />
+            </>
+          }
+        />
+
+      <Route
+          path="/JobForm/JobDetailsForm"
+          element={
+            <>
+              <PageTitle title="JobDetailsForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobForm />
+            </>
+          }
+        />
+
+        
+      <Route
+          path="/JobForm/ClientRegistrationForm"
+          element={
+            <>
+              <PageTitle title="ClientRegistrationForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobFormClient />
+            </>
+          }
+        />
+
+      <Route
+          path="/JobForm/TransportRegistrationForm"
+          element={
+            <>
+              <PageTitle title="TransportResgistrationForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobFormTransport />
+            </>
+          }
+        />
+
+      <Route
+          path="/JobForm/FieldDetailsForm"
+          element={
+            <>
+              <PageTitle title="FieldDetailsForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobFormField />
+            </>
+          }
+        />
+
+      <Route
+          path="/OpsForm/DroneInfoForm"
+          element={
+            <>
+              <PageTitle title="DroneInfoForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <OpsForm />
+            </>
+          }
+        />
+        
+        <Route
+          path="/OpsForm/FlightInfoForm"
+          element={
+            <>
+              <PageTitle title="FlightInfoForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <OpsFormFlight/>
+            </>
+          }
+        />
+
+        <Route
+          path="/OpsForm/SprayingInfoForm"
+          element={
+            <>
+              <PageTitle title="SprayingInfoForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <OpsFormSpray />
+            </>
+          }
+        />
+
+        <Route
+          path="/OpsForm/SummaryInfoForm"
+          element={
+            <>
+              <PageTitle title="SummaryInfoForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <OpsFormSummary />
+            </>
+          }
+        />
+
+        <Route
+          path="/DroneCrashForm/DroneCrashDetailsForm"
+          element={
+            <>
+              <PageTitle title="DroneCrashDetailsForm | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <DroneCrashForm />
+            </>
+          }
+        />
+        
+        
         <Route
           path="/forms/form-elements"
           element={
@@ -78,15 +213,120 @@ function App() {
             </>
           }
         />
+        
         <Route
-          path="/tables"
+          path="/AdminTable/UserDetailsTable"
           element={
             <>
-              <PageTitle title="Tables | TailAdmin - Tailwind CSS Admin Dashboard Template" />
-              <Tables />
+              <PageTitle title="UserDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <AdminTable />
             </>
           }
         />
+        
+        <Route
+          path="/AdminTable/PilotDetailsTable"
+          element={
+            <>
+              <PageTitle title="PilotDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <AdminTablePilot />
+            </>
+          }
+        />
+        
+        <Route
+          path="/JobTable/JobDetailsTable"
+          element={
+            <>
+              <PageTitle title="PilotDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobTable />
+            </>
+          }
+        />
+
+         <Route
+          path="/JobTable/ClientDetailsTable"
+          element={
+            <>
+              <PageTitle title="ClientDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobTableClient />
+            </>
+          }
+        />
+        
+        <Route
+          path="/JobTable/TransportDetailsTable"
+          element={
+            <>
+              <PageTitle title="TransportDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobTableTransport />
+            </>
+          }
+        />
+
+              <Route
+          path="/JobTable/TransportDetailsTable"
+          element={
+            <>
+              <PageTitle title="TransportDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobTableTransport />
+            </>
+          }
+        />
+        
+        <Route
+          path="/JobTable/FieldDetailsTable"
+          element={
+            <>
+              <PageTitle title="FieldDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <JobTableField  />
+            </>
+          }
+        />
+
+        <Route
+          path="/OpsTable/DroneDetailsTable"
+          element={
+            <>
+              <PageTitle title="DroneDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <OpsTable />
+            </>
+          }
+        />
+
+
+        <Route
+          path="/OpsTable/SprayDetailsTable"
+          element={
+            <>
+              <PageTitle title="SprayDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <OpsTableSpray />
+            </>
+          }
+        />
+
+        <Route
+          path="/OpsTable/FlightDetailsTable"
+          element={
+            <>
+              <PageTitle title="FlightDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <OpsTableFlight />
+            </>
+          }
+        />
+        
+        <Route
+          path="/OpsTable/SummaryDetailsTable"
+          element={
+            <>
+              <PageTitle title="SummaryDetailsTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <OpsTableSummary />
+            </>
+          }
+        />
+        
+        
+        
         <Route
           path="/settings"
           element={
@@ -96,6 +336,8 @@ function App() {
             </>
           }
         />
+
+
         <Route
           path="/chart"
           element={
