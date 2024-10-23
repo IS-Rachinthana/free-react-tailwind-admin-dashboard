@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
+<<<<<<< HEAD
 import LogoDark from '../../images/logo/drone-svgrepo-com.svg';
 import Logo from '../../images/logo/drone-svgrepo-com.svg';
 import DefaultLayout from '../../layout/DefaultLayout';
@@ -10,6 +11,15 @@ import Swal from 'sweetalert2';
 const SignIn: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+=======
+import LogoDark from '../../images/logo/logo-dark.svg';
+import Logo from '../../images/logo/logo.svg';
+
+const SignIn: React.FC = () => {
+  return (
+    <>
+      <Breadcrumb pageName="Sign In" />
+>>>>>>> d382bb4ad107d1f0c5bc96c018f271c05e008389
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -157,7 +167,11 @@ const SignIn: React.FC = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
     </div>
+=======
+    </>
+>>>>>>> d382bb4ad107d1f0c5bc96c018f271c05e008389
   );
 };
 

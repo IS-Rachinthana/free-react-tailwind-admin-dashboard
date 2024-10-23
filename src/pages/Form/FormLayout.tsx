@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 import SelectGroupOne from '../../components/Forms/SelectGroup/SelectGroupOne';
+<<<<<<< HEAD
 import DefaultLayout from '../../layout/DefaultLayout';
 import DatePickerOne from '../../components/Forms/DatePicker/DatePickerOne';
 import DatePickerTwo from '../../components/Forms/DatePicker/DatePickerTwo';
+=======
+>>>>>>> d382bb4ad107d1f0c5bc96c018f271c05e008389
 
 const FormLayout = () => {
   return (
-    <DefaultLayout>
+    <>
       <Breadcrumb pageName="Form Layout" />
 
       <div className="grid grid-cols-1 gap-9 sm:grid-cols-1">
@@ -103,7 +106,7 @@ const FormLayout = () => {
         </div>
 
       </div>
-    </DefaultLayout>
+    </>
   );
 };
 

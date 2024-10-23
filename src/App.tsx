@@ -21,6 +21,7 @@ import JobTableField from './pages/FieldDetailsTable';
 
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
+<<<<<<< HEAD
 import OpsTable from './pages/DroneDetailsTable';
 import OpsTableSpray from './pages/SprayDetailsTable';
 import OpsTableFlight from './pages/FlightDetailsTable';
@@ -36,6 +37,9 @@ import OpsFormFlight from './pages/OpsForm/FlightInfoForm';
 import OpsFormSpray from './pages/OpsForm/SprayingInfoForm';
 import OpsFormSummary from './pages/OpsForm/SummaryInfoForm';
 import DroneCrashForm from './pages/DroneCrashForm/DroneCrashDetailsForm';
+=======
+import DefaultLayout from './layout/DefaultLayout';
+>>>>>>> d382bb4ad107d1f0c5bc96c018f271c05e008389
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -52,7 +56,7 @@ function App() {
   return loading ? (
     <Loader />
   ) : (
-    <>
+    <DefaultLayout>
       <Routes>
         <Route
           index
@@ -384,7 +388,7 @@ function App() {
           }
         />
       </Routes>
-    </>
+    </DefaultLayout>
   );
 }
 
